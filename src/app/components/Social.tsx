@@ -1,7 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
-import { MdOutlineEmail } from "react-icons/md";
 import Image from "next/image";
 
 function Social() {
