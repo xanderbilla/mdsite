@@ -19,7 +19,7 @@ export default function Navbar({}: Props) {
           className="text-slate-600 bg-slate-200 hover:bg-slate-300 font-medium 
           flex items-center justify-center gap-2 w-auto px-2 py-1 duration-700 
           rounded-md ease-in-out transition-all cursor-pointer"
-          onClick={handleBtn} // Fixed the onClick event handler
+          onClick={handleBtn}
         >
           <GoBack />
           Go Back

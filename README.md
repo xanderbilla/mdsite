@@ -4,7 +4,7 @@
 
 # Contact | mdsite
 
-This document is all about the Contact page for [**mdsite**](https://xanderbilla.com/contact).
+This document is all about the Contact page for [**mdsite**](https://contact.xanderbilla.com/).
 
 ## Environment Variables
 
