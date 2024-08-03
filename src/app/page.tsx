@@ -15,7 +15,7 @@ export default function Home() {
     >
       <div className="w-full flex items-center justify-center">
         <h1 className="px-4 text-xl md:text-2xl lg:text-3xl text-slate-900">
-          Your Mesage! | E-Chimer
+          Leave Your Message / Feedback / Query
         </h1>
       </div>
       <div className="flex items-center flex-col lg:flex-row-reverse justify-center my-8 w-full h-full gap-8">
