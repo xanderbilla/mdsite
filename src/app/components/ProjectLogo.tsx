@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 
 export default function ProjectLogo({ onlyProjectLogo, isFooter }: Props) {
   return (
-    <div className="flex items-center justify-center gap-4">
+    <Link href="https://xanderbilla.com" className="flex items-center justify-center gap-4">
       {onlyProjectLogo ? null : (
         <>
           <Image
@@ -34,6 +35,6 @@ export default function ProjectLogo({ onlyProjectLogo, isFooter }: Props) {
         height={200}
         className={`${isFooter ? "hidden tablet::block" : ""} h-auto`}
       />
-    </div>
+    </Link>
   );
 }
