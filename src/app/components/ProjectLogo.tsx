@@ -14,7 +14,7 @@ export default function ProjectLogo({ onlyProjectLogo, isFooter }: Props) {
           <Image
             src="/logo.png"
             alt="AWS Logo"
-            width={50}
+            width={150}
             height={50}
             className="h-auto"
           />
@@ -23,7 +23,7 @@ export default function ProjectLogo({ onlyProjectLogo, isFooter }: Props) {
             alt="Vertical bar"
             width={50}
             height={50}
-            className={`h-auto ${isFooter ? "hidden md:block" : ""}`}
+            className={`h-auto ${isFooter ? "hidden tablet::block" : ""}`}
           />
         </>
       )}
@@ -32,7 +32,7 @@ export default function ProjectLogo({ onlyProjectLogo, isFooter }: Props) {
         alt="AWS Amplify Logo"
         width={200}
         height={200}
-        className={`${isFooter ? "hidden md:block" : ""} h-auto`}
+        className={`${isFooter ? "hidden tablet::block" : ""} h-auto`}
       />
     </div>
   );
