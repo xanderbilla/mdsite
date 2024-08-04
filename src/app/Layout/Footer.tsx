@@ -7,7 +7,8 @@ type Props = {};
 export default function Footer({}: Props) {
   const year = new Date().getFullYear();
   return (
-    <div className="w-full h-24 flex flex-col md:flex-row items-center justify-between my-4 gap-4">
+    <div className="w-full h-32 md:h-24 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center 
+    justify-between py-4 gap-4 bg-gradient-to-t from-slate-300 via-slate-200/90 to-slate-100/30">
       <ProjectLogo isFooter />
       <div className="h-auto flex flex-col items-center justify-center gap-1">
         <h3 className="text-lg md:text-2xl">mdsite Template</h3>

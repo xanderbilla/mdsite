@@ -6,7 +6,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main
-      className="w-full min-h-[calc(100vh-14rem)] h-auto flex flex-col items-center 
+      className="w-full min-h-[calc(100vh-12rem)] px-8 md:px-20 h-auto flex flex-col items-center 
     justify-start gap-8 transition-all duration-300 ease-in-out"
     >
       <div className="w-full h-96 flex items-center justify-center">
