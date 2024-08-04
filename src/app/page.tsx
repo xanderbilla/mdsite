@@ -9,10 +9,13 @@ export default function Home() {
 
   return (
     <main
-    className="w-full min-h-[calc(100vh-12rem)] px-8 tablet:px-20 h-auto flex flex-col 
+      className="w-full min-h-[calc(100vh-12rem)] px-8 tablet:px-20 h-auto flex flex-col 
     items-center justify-start gap-8 transition-all duration-300 ease-in-out"
-  >
-      <h1 className="text-4xl text-center">Welcome!<h3 className="text-base text-gray-500 text-right">To my world!</h3></h1>
+    >
+      <h1 className="text-4xl text-center flex flex-col items-center justify-center w-36">
+        Welcome!
+        <span className="w-full text-base text-gray-500 text-right">To my world!</span>
+      </h1>
       <p className="text-lg text-center">
         To know more about me and my work, please navigate to the following
         pages:
