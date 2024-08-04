@@ -6,10 +6,10 @@ type Props = {};
 
 export default function Navbar({}: Props) {
   return (
-    <div className="w-full h-24 flex items-center justify-center md:justify-between gap-4">
+    <div className="w-full h-24 flex items-center justify-between gap-4">
       <ProjectLogo onlyProjectLogo />
       <Link
-        href="https://github.com/xanderbilla/mdsite/tree/mdsite-template"
+        href="https://github.com/xanderbilla"
         target="_blank"
       >
         <Image src="/icons/github.svg" alt="Menu" width={48} height={48} />

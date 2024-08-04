@@ -7,11 +7,11 @@ type Props = {};
 export default function Footer({}: Props) {
   const year = new Date().getFullYear();
   return (
-    <div className="w-full h-24 flex flex-col md:flex-row items-center justify-between my-4 gap-4">
+    <div className="w-full h-24 flex flex-col tablet:flex-row tabletflex-row items-center justify-between my-4 gap-4">
       <ProjectLogo isFooter />
       <div className="h-auto flex flex-col items-center justify-center gap-1">
-        <h3 className="text-lg md:text-2xl">mdsite Template</h3>
-        <p className="text-sm md:text-xs text-center">
+        <h3 className="text-lg tablettext-2xl">Home</h3>
+        <p className="text-sm tablettext-xs text-center">
           &copy; {year},{" "}
           <Link
             href="https://github.com/xanderbilla"
