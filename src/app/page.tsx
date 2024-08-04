@@ -18,7 +18,7 @@ export default function Home() {
       className="w-full min-h-[calc(100vh-14rem)] h-auto flex flex-col items-center 
     justify-start gap-8 transition-all duration-300 ease-in-out py-6"
     >
-      <h1 className="text-4xl text-center">Welcome to mdsite</h1>
+      <h1 className="text-4xl text-center">Welcome!</h1>
       <p className="text-lg text-center">
         To know more about me and my work, please navigate to the following
         pages:
