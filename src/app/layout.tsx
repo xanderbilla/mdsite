@@ -7,9 +7,9 @@ import Navbar from "@/app/Layout/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "E-Chimer",
+  title: "Home | Xander Billa",
   description:
-    "A platform to send message and speak to developers for help and support",
+    "A platform for my online presence, portfolio, blogs, projects, and contact.",
 };
 
 export default function RootLayout({
@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`font-sans min-h-screen px-8 tablet:px-20 ${inter.className}`}
-      >
+      <body className={`font-sans min-h-screen${inter.className}`}>
         <Navbar />
         {children}
         <Footer />
