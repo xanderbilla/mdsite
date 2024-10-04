@@ -5,9 +5,9 @@ import { useEffect, useRef } from "react";
 
 import gsap from "gsap";
 
-import slice from "../static/data";
-import Bounded from "@/components/Bounded";
+import {slice} from "../static/data";
 import {Shapes} from "@/components/Shapes";
+import Bounded from "@/components/Bounded";
 
 type Props = object;
 
@@ -74,7 +74,7 @@ export default function Hero({}: Props) {
     };
 
     return (
-        <Bounded ref={component}>
+    <Bounded className="py-0 md:px-6 md:py-0 lg:py-0" ref={component}>
             <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
                 <Shapes />
                 <div className="col-start-1 md:row-start-1">
