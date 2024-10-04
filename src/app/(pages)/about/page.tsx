@@ -7,8 +7,8 @@ import { Metadata } from "next";
 type Props = object;
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'About me',
+  title: 'About  | Xander Billa',
+  description: 'Discover more about Vikas Singh, Student, with expertise in AWS, Java and web development. Learn about my background, professional journey, and passion for tech. Explore projects, achievements, and personal insights.',
 }
 
 export default function page({}: Props) {

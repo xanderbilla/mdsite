@@ -5,13 +5,15 @@ import { Urbanist } from "next/font/google";
 import Navbar from "./Layout/Navbar";
 import Footer from "./Layout/Footer";
 
-
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "A personal website",
-}
+  title: "Home | Xander Billa",
+  description:
+    "Explore Xander Billa's portfolio featuring a curated selection of innovative projects across my skills. From Cloud to DevOps, showcasing expertise, creativity, and professional excellence.",
+  keywords:
+    "xander billa, portfolio, projects, showcases, technology, design, creative solutions, case studies, innovation, demos, project details",
+};
 
 export default function RootLayout({
   children,
