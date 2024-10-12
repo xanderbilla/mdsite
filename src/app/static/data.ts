@@ -54,7 +54,7 @@ const projects = [
     title: "My Shop",
     description: "An e-commerce platform",
     image: "https://xanderbilla.s3.ap-south-1.amazonaws.com/ORG_DATA/project_2__my-store.png",
-    url: "https://my-shop-snowy-two.vercel.app/",
+    url: "https://shop.xanderbilla.com/",
     tags: ["NextJs", "TailwindCSS"],
     created_date: "2023-08-10T00:00:00.000Z"
   },
