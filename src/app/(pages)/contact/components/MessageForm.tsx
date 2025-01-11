@@ -23,7 +23,7 @@ export default function MessageForm({}: Props) {
                     console.log({ name, email, subject, message });
                     setIsSubmitted(true);
                     setFormResult("✅ Sent Successfully");
-                } catch (error) {
+                } catch {
                     setFormResult("Something went wrong");
                 } finally {
                     setIsLoading(false);
