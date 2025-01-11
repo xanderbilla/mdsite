@@ -1,4 +1,3 @@
-
 import Bounded from "@/components/Bounded";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
@@ -15,33 +14,35 @@ export default function RichText({}: Props) {
           About Vikas
         </Heading>
         <div className="prose prose-xl prose-slate prose-invert col-start-1">
-        <p>
+          <p>
             As a B.Tech student at <strong>Lovely Professional University</strong>, I specialize
-            in <strong>cloud computing, networking, and web development</strong>
-            . I have a strong foundation in programming languages like Python,
-            SQL, C++, and Java, and I&apos;m proficient in web development
-            frameworks. My skills in Git, Amazon Web Services (AWS), and Cisco
-            Certified Network Associate (CCNA) demonstrate my technical
-            expertise.{" "}
+            in cloud computing, networking, and web development. I have a strong
+            foundation in programming languages like <strong>Python, SQL, C++, and Java</strong>,
+            and I&apos;m proficient in web development frameworks. My skills <strong>DevOps, Web Development and 
+            DevOps</strong> demonstrate my technical expertise.
           </p>
 
           <p>
             I&apos;m a continuous learner, always seeking opportunities to expand my
-            knowledge. I&apos;m currently exploring{" "}
-            <strong>containerization technologies and DevOps practices</strong>{" "}
-            to further enhance my capabilities and contribute effectively to the
-            dynamic field of technology and software development.{" "}
+            knowledge. I&apos;m currently exploring containerization technologies and
+            DevOps practices, focusing on AWS cloud solutions, to further
+            enhance my capabilities and contribute effectively to the dynamic
+            field of technology and software development.
           </p>
 
           <p>
             My passion for continuous learning drives me to stay updated with
             the latest industry trends and explore new opportunities for
             professional growth. I&apos;m eager to apply my skills and knowledge to
-            real-world projects and collaborate with talented professionals to
-            create innovative solutions.
+            real-world projects, particularly in Full Stack Development, Spring
+            Boot, and Cloud (AWS), and collaborate with talented professionals
+            to create innovative solutions.
           </p>
         </div>
-        <Button linkField="https://xanderbilla.s3.ap-south-1.amazonaws.com/Resume.pdf" label="Resume" />
+        <Button
+          linkField="https://xanderbilla.s3.ap-south-1.amazonaws.com/Resume.pdf"
+          label="Resume"
+        />
         <Image
           src="https://github.com/shadcn.png"
           height={300}
