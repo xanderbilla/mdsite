@@ -95,6 +95,7 @@ const navLinks = [
   { link: "/about", label: "About Me" },
   { link: "/blogs", label: "Blogs" },
   { link: "/projects", label: "Projects" },
+  { link: "/contact", label: "Contact" },
 ];
 
 const footerData = {

@@ -78,7 +78,7 @@ export default function NavBar() {
               </React.Fragment>
             ))}
             <li>
-              <Button linkField="/" label="Contact" className="ml-3" />
+            <Button linkField="https://zalgorythmix.vercel.app/" label="What I Know?" className="ml-3" />
             </li>
           </div>
           <DesktopMenu
@@ -155,7 +155,7 @@ function DesktopMenu({
         </React.Fragment>
       ))}
       <li>
-        <Button linkField="/contact" label="Contact Us" className="ml-3" />
+        <Button linkField="https://zalgorythmix.vercel.app/" label="What I Know?" className="ml-3" />
       </li>
     </div>
   );
