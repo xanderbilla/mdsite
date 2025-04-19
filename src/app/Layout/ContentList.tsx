@@ -9,16 +9,16 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 type contentProps = {
-  items: Array<{
-    id: string;
-    title: string;
-    description?: string;
-    image: string;
-    url: string;
-    tags: string[];
-    created_date: string;
+  readonly items: Array<{
+    readonly id: string;
+    readonly title: string;
+    readonly description?: string;
+    readonly image: string;
+    readonly url: string;
+    readonly tags: string[];
+    readonly created_date: string;
   }>;
-  contentType: "blogs" | "projects";
+  readonly contentType: "blogs" | "projects";
 };
 
 export default function ContentList({ items, contentType }: contentProps) {
@@ -29,6 +29,12 @@ export default function ContentList({ items, contentType }: contentProps) {
   const [currentItem, setCurrentItem] = useState<null | number>(null);
   const [hovering, setHovering] = useState(false);
   const lastMousePos = useRef({ x: 0, y: 0 });
+
+  // Sort items by created_date in descending order
+  const sortedItems = [...items].sort(
+    (a, b) =>
+      new Date(b.created_date).getTime() - new Date(a.created_date).getTime()
+  );
 
   useEffect(() => {
     // Animate list-items in with a stagger
@@ -109,10 +115,10 @@ export default function ContentList({ items, contentType }: contentProps) {
     setCurrentItem(null);
   };
 
-  const contentImages = items.map((item) => {
+  const contentImages = sortedItems.map((item) => {
     const image = item.image
       ? item.image
-      : "https://via.placeholder.com/220x320";
+      : "https://via.placeholder.com/320x220";
     return image;
   });
 
@@ -132,7 +138,7 @@ export default function ContentList({ items, contentType }: contentProps) {
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
       >
-        {items.map((post, index) => (
+        {sortedItems.map((post, index) => (
           <li
             key={index}
             ref={(el) => {
@@ -144,9 +150,7 @@ export default function ContentList({ items, contentType }: contentProps) {
             <Link
               target="_blank"
               href={
-                contentType === "blogs"
-                  ? `${contentType}/${post.id}`
-                  : post.url
+                contentType === "blogs" ? `${contentType}/${post.id}` : post.url
               }
               className="flex flex-col justify-between border-t border-t-slate-100 py-10  text-slate-200 md:flex-row "
               aria-label={post.title || ""}
@@ -171,7 +175,7 @@ export default function ContentList({ items, contentType }: contentProps) {
 
         {/* Hover element */}
         <div
-          className="hover-reveal pointer-events-none absolute left-0 top-0 -z-10 h-[320px] w-[220px] rounded-lg bg-contain bg-no-repeat bg-center opacity-0 transition-[background] duration-300"
+          className="hover-reveal pointer-events-none absolute left-0 top-0 -z-10 h-[180px] w-[320px] rounded-lg bg-contain bg-center opacity-0 transition-[background] duration-300"
           style={{
             backgroundImage:
               currentItem !== null ? `url(${contentImages[currentItem]})` : "",

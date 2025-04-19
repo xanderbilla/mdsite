@@ -15,28 +15,16 @@ export default function RichText({}: Props) {
         </Heading>
         <div className="prose prose-xl prose-slate prose-invert col-start-1">
           <p>
-            As a B.Tech student at <strong>Lovely Professional University</strong>, I specialize
-            in cloud computing, networking, and web development. I have a strong
-            foundation in programming languages like <strong>Python, SQL, C++, and Java</strong>,
-            and I&apos;m proficient in web development frameworks. My skills <strong>DevOps, Web Development and 
-            DevOps</strong> demonstrate my technical expertise.
+            I&apos;m a B.Tech student at <strong>Lovely Professional University</strong>, skilled in
+            cloud computing, networking, and web development. I work with
+            <strong>Python, SQL, C++, Java, and now Spring Boot</strong>, excelling in DevOps and
+            full-stack projects. Passionate about learning, I’m exploring AWS
+            and containerization to stay ahead. Check out my work—I’m ready to
+            collaborate and build something great!
           </p>
 
           <p>
-            I&apos;m a continuous learner, always seeking opportunities to expand my
-            knowledge. I&apos;m currently exploring containerization technologies and
-            DevOps practices, focusing on AWS cloud solutions, to further
-            enhance my capabilities and contribute effectively to the dynamic
-            field of technology and software development.
-          </p>
-
-          <p>
-            My passion for continuous learning drives me to stay updated with
-            the latest industry trends and explore new opportunities for
-            professional growth. I&apos;m eager to apply my skills and knowledge to
-            real-world projects, particularly in Full Stack Development, Spring
-            Boot, and Cloud (AWS), and collaborate with talented professionals
-            to create innovative solutions.
+            I also enjoy developing projects that integrate modern technologies and improve user experiences, constantly pushing my boundaries.
           </p>
         </div>
         <Button
